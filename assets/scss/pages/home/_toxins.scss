@@ -1,0 +1,19 @@
+.toxins {
+  margin: 2rem 0 0 0;
+  line-height: 2;
+  background-color: $light-grey;
+  padding: 3rem 0;
+
+  h2 {
+    margin-bottom: 1.5rem;
+  }
+
+  img {
+    margin-bottom: 1.5rem;
+  }
+
+  @include breakpoint(md) {
+    margin: 5rem 0 0 0;
+    margin-bottom: 0;
+  }
+}

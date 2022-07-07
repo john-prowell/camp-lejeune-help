@@ -1,0 +1,22 @@
+.eligibility {
+  margin: 2rem 0 0 0;
+  line-height: 2;
+  padding: 3rem 0;
+  background-color: $light-grey;
+
+  @include breakpoint(md) {
+    margin: 5rem 0 0 0;
+  }
+
+  h2 {
+    margin-bottom: 1.5rem;
+  }
+
+  img {
+    margin-bottom: 1rem;
+
+    @include breakpoint(md) {
+      margin-bottom: 0;
+    }
+  }
+}

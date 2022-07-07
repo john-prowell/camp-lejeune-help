@@ -1,0 +1,38 @@
+// Base
+@import 'base/variables';
+@import 'base/mixins';
+@import 'base/fonts';
+@import 'base/base';
+
+// layout
+@import 'layout/header';
+@import 'layout/footer';
+
+// Homepage Sections
+@import 'pages/home/hero';
+@import 'pages/home/intro';
+@import 'pages/home/toxins';
+@import 'pages/home/illnesses';
+@import 'pages/home/eligibilty';
+
+// /**
+//  * WordPress customizationn
+//  */
+/* If WP-Adminbar is visible */
+body.admin-bar {
+  #header.fixed-top {
+    top: 32px;
+  }
+
+  .edit-link a {
+    color: #fff !important;
+    font-weight: normal !important;
+    text-decoration: none !important;
+
+    &::before {
+      content: '\270E';
+      display: inline-block;
+      margin-right: 5px;
+    }
+  }
+}

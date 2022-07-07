@@ -1,0 +1,22 @@
+.illnesses {
+  margin: 2rem 0 0 0;
+  line-height: 2;
+
+  h2 {
+    margin-bottom: 1.5rem;
+  }
+
+  ul {
+    columns: 2;
+    margin-bottom: 1rem;
+
+    @include breakpoint(md) {
+      margin-bottom: 0;
+    }
+  }
+
+  @include breakpoint(md) {
+    margin: 5rem 0 0 0;
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,87 @@
+// Hero Section - Homepage
+
+.hero {
+  min-height: 500px;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+    url(../../assets/images/marines-funeral-casket.jpg);
+  background-size: cover;
+  background-position: center;
+  color: $light-grey;
+  background-repeat: no-repeat;
+  padding: 1rem;
+
+  @include breakpoint(md) {
+    padding: 3rem;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 1.5rem;
+
+    @include breakpoint(md) {
+      padding-right: 2rem;
+      margin-bottom: 0;
+    }
+  }
+
+  &__heading {
+    color: $white;
+    margin-bottom: 1.25rem;
+    font-size: 3rem;
+    line-height: 1.25;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+
+    @include breakpoint(sm) {
+      display: block;
+      margin-bottom: 1rem;
+    }
+
+    @include breakpoint(md) {
+      font-size: 5rem;
+    }
+
+    &--sub {
+      text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+      font-size: 1.55rem;
+
+      @include breakpoint(md) {
+        width: 75%;
+      }
+    }
+  }
+
+  &__form {
+    background-color: rgba($white, 0.75);
+    border-radius: 10px;
+
+    // Live
+    #forminator-module-13 {
+      display: block !important;
+    }
+
+    //local
+    #forminator-module-19 {
+      display: block !important;
+    }
+
+    p {
+      margin: 1.5rem 0 0 0;
+      font-weight: bold;
+      font-size: 1.5rem;
+      color: $blue;
+
+      @include breakpoint(md) {
+        font-size: 2rem;
+      }
+    }
+
+    p:nth-child(2) {
+      margin: 0;
+    }
+  }
+}

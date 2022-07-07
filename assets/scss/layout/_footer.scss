@@ -1,0 +1,23 @@
+.footer {
+  padding: 2rem 0;
+  background-color: $blue;
+  text-align: center;
+  color: $light-grey;
+
+  a {
+    color: $white;
+  }
+
+  @include breakpoint(md) {
+    padding: 6rem 0;
+
+    h2 {
+      font-size: 3rem;
+    }
+  }
+
+  &__copyright {
+    font-size: 0.75rem;
+    margin-top: 1rem;
+  }
+}

@@ -1,0 +1,12 @@
+.intro {
+  margin: 2rem 0 0 0;
+  line-height: 2;
+
+  h2 {
+    margin-bottom: 1.5rem;
+  }
+
+  @include breakpoint(md) {
+    margin: 5rem 0 0 0;
+  }
+}

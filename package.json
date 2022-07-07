@@ -1,0 +1,26 @@
+{
+  "name": "CampLejeune",
+  "version": "1.0.0",
+  "description": "camplejeunehelp.net",
+  "main": "gulpfile.js",
+  "scripts": {
+    "sprite": "svg-sprite-generate -d assets/images/ -o assets/images/sprite.svg"
+  },
+  "author": "John Prowell",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.0.1",
+    "browser-sync": "^2.26.13",
+    "cssnano": "^4.1.10",
+    "gulp": "^4.0.2",
+    "gulp-decomment": "^0.2.2",
+    "gulp-postcss": "^9.0.1",
+    "gulp-purgecss": "^4.0.3",
+    "gulp-sass": "^4.1.0",
+    "postcss": "^8.4.14"
+  },
+  "browserslist": [
+    "last 2 versions"
+  ],
+  "dependencies": {}
+}
