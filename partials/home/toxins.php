@@ -3,20 +3,16 @@
   <div class="container">
     <div class="row">
     <div class="col-md-6">
-        <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/getting_water_sample.jpg" alt="">
+    <?php 
+        $toxinsImage = get_field('toxins_image');
+        if( !empty( $toxinsImage ) ): ?>
+          <img class="img-fluid" src="<?php echo esc_url($toxinsImage['url']); ?>" alt="<?php echo esc_attr($toxinsImage['alt']); ?>" />
+      <?php endif; ?>
       </div>
       <div class="col-md-6">
-        <h2>What toxins were in in the drinking water at Camp Lejeune?</h2>
-        <p>Two on-base water wells that were shut down in 1985 had these chemicals:</p>
-        <ul>
-          <li>Trichloroethylene (TCE)</li>
-          <li>Perchloroethylene (PCE)</li>
-          <li>Benzene</li>
-          <li>Vinyl chloride</li>
-          <li>Other compounds</li>
-        </ul>
-      </div>
-      
+        <h2><?php the_field('toxins_h2') ?></h2>
+        <?php the_field('toxins_text'); ?>
+      </div>      
     </div>
   </div>
 </section>
